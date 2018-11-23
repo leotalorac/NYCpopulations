@@ -12,17 +12,25 @@ html,body{
 	margin: 0;
 }
 .information-container{
-	background-color: #3A43A3;
+	background-color: #009ddc;
 	color: #ffffff;
-}
-#show-button{
-	z-index: 10;
-	margin-left: 1%;
-	margin-top: 1%;
-	position: absolute;
+	padding-top: 1%;
 }
 #map{
+	height: 100%;
+	margin: 0;
+}
+#info{
 	height: 50%;
+	margin: 0;
+}
+#cityimg{
+	margin-top: 90%;
+}
+#cityimg img{
 	width: 100%;
+	height: auto;
+}
+#graphics{
 	margin: 0;
 }
