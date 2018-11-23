@@ -26,7 +26,7 @@ function putMarkers() {
 			// animation: google.maps.Animation.DROP,
 			position: center,
 			icon: {                             
-				url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"                           
+				url: "./information.png"                           
 			},
 			title: ck[i]
 		})
@@ -40,11 +40,11 @@ function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
 		//center of the map
 		center: {
-			lat: 41.7142700,
+			lat: 40.7142700,
 			lng: -74.0059700
 		},
 		// the zoom
-		zoom: 7,
+		zoom: 10,
 		//remove the ui
 		// mapTypeId: google.maps.MapTypeId.ROADMAP,
 		// disableDefaultUI: true,
@@ -68,7 +68,7 @@ function zoomMap(val){
 				animation: google.maps.Animation.BOUNCE,
 				position: center,
 				icon: {                             
-					url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png"                           
+					url: "./information2.png"                           
 				},
 				title: title
 			})
@@ -80,7 +80,7 @@ function resetmarkers(){
 	removemarkers();
 	markers.forEach((v) =>{
 		v.setMap(map)
-		v.setIcon("http://maps.google.com/mapfiles/ms/icons/purple-dot.png")
+		v.setIcon("./information.png")
 	});
 }
 function removemarkers(){
