@@ -1,14 +1,16 @@
 let map;
 let api = "https://data.cityofnewyork.us/resource/rreq-n6zk.json";
 let data = [];
-
+let ck = Object.keys(coords)
 //get the data
 function getData(){
 	let response = $.get(api)
 	//save the data
 	.done(() =>{
 		response.responseJSON.forEach((v,i,a) =>{
-			data.push(v);
+			if(ck.includes(v["jurisdiction_name"])){
+				data.push(v);
+			}
 		});
 	});
 	
